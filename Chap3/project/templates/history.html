@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+{% block content %}
+    <p>以下是历史记录：</p>
+    <p>
+        {% for history in h %}
+          {{history[0]}}的天气是{{history[1]}}，{{history[2]}}摄氏度，时间为{{history[3]}}<br>
+        {% endfor %}
+    </p>
+{% endblock %}
